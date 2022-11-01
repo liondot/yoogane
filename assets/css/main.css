@@ -1,0 +1,1305 @@
+/* Made by Masstige */
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.main-visual .item {
+  position: relative;
+}
+.main-visual .img-bx {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.main-visual .img-bx::after {
+  content: "";
+  display: block;
+  padding-bottom: 41.6666666667%;
+}
+.main-visual .img-bx > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%) scale(0.1);
+}
+.main-visual .txt-bx {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.05em;
+  line-height: 1.3;
+}
+.main-visual .txt-bx .title {
+  font-size: 5em;
+}
+.main-visual .txt-bx .text {
+  margin-top: 1em;
+  font-size: 1.875em;
+  font-weight: 300;
+  transition-delay: 300ms !important;
+}
+.main-visual .swiper-slide .txt-bx .title,
+.main-visual .swiper-slide .txt-bx .text {
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 1000ms opacity, 1000ms transform;
+}
+.main-visual .swiper-slide-active .txt-bx .title,
+.main-visual .swiper-slide-active .txt-bx .text {
+  transform: translateY(0);
+  opacity: 1;
+}
+@media all and (max-width: 1200px) {
+  .main-visual .img-bx::after {
+    padding-bottom: 66.6666666667%;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-visual .img-bx::after {
+    padding-bottom: 83.3333333333%;
+  }
+  .main-visual .txt-bx {
+    font-size: 2.3vw;
+  }
+}
+.main-visual .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 3.125rem;
+  transform: translateX(-50%);
+}
+.main-visual .swiper-pagination-bullet {
+  margin: 0 4px;
+}
+@media all and (max-width: 1024px) {
+  .main-visual .swiper-pagination {
+    bottom: 1.25rem;
+  }
+}
+.main-visual .swiper-button {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 2.5rem;
+  transition: 300ms color;
+}
+.main-visual .swiper-button:hover {
+  color: #007bff;
+}
+.main-visual .swiper-button--prev {
+  left: 50%;
+  margin-left: -700px;
+}
+.main-visual .swiper-button--next {
+  right: 50%;
+  margin-right: -700px;
+}
+@media all and (max-width: 1400px) {
+  .main-visual .swiper-button {
+    display: none;
+  }
+}
+.main-visual .swiper-play {
+  display: block;
+  padding-right: 8px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+.main-visual .swiper-play .xi-pause {
+  display: none;
+}
+.main-visual .swiper-play.on .xi-pause {
+  display: inline-block;
+}
+.main-visual .swiper-play.on .xi-play {
+  display: none;
+}
+.main-visual .swiper-control.swiper-control--progress {
+  position: absolute;
+  bottom: 3.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.main-visual .swiper-control.swiper-control--progress .swiper-pagination {
+  transform: none;
+}
+.main-visual .swiper-control.swiper-control--progress .swiper-pagination-bullets {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.main-visual .swiper-control.swiper-control--progress .swiper-pagination-bullet {
+  position: relative;
+  display: block;
+  margin: 0 5px;
+  border-radius: 0;
+  width: 88px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
+.main-visual .swiper-control.swiper-control--progress .swiper-pagination-bullet::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+}
+.main-visual .swiper-control.swiper-control--progress .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  animation: progress 3s linear 0s 1;
+  width: 100%;
+}
+.main-visual .swiper-control.swiper-control--progress-no {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3.125rem;
+  z-index: 10;
+}
+.main-visual .swiper-control.swiper-control--progress-no .container {
+  display: flex;
+  align-items: center;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination {
+  position: static;
+  transform: none;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 1.875rem;
+  padding-right: 0;
+  position: relative;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet::before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 2.1875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 7.5rem;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 2.1875rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background: #000;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet-active {
+  color: #000;
+  padding-right: 8.4375rem;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet-active::before, .main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet-active::after {
+  display: block;
+}
+.main-visual .swiper-control.swiper-control--progress-no .swiper-pagination-bullet-active::after {
+  animation: progress 5.1s linear 0s 1;
+}
+
+.main-body {
+  overflow-x: hidden;
+}
+
+.header {
+  display: block !important;
+}
+
+.main-visual {
+  padding: 0 1.25rem;
+}
+
+.main-visual-bg {
+  background: url("../images/main/main-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 58.5rem;
+  position: relative;
+}
+@media all and (max-width: 1024px) {
+  .main-visual-bg .main-con-logo {
+    width: 52.0833333333vw;
+    margin: 0 auto;
+  }
+}
+.main-visual-bg .main-txt {
+  font-size: 3.125rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 9.375rem;
+  position: static;
+}
+@media all and (max-width: 1024px) {
+  .main-visual-bg .main-txt {
+    font-size: 5.2083333333vw;
+  }
+}
+@media all and (max-width: 768px) {
+  .main-visual-bg .main-txt {
+    font-size: 6.25vw;
+  }
+}
+@media all and (max-width: 576px) {
+  .main-visual-bg .main-txt {
+    font-size: 7.2916666667vw;
+  }
+}
+.main-visual-bg .main-txt p {
+  font-family: "S-CoreDream-3Light";
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 2.1875rem;
+}
+.main-visual-bg .main-txt p span {
+  font-weight: 800;
+}
+.main-visual-bg .main-txt p span em {
+  font-style: normal;
+  color: #ff8a00;
+}
+.main-visual-bg .swiper-container {
+  text-align: center;
+  max-width: 87.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 100%;
+  transform: translateX(-50%);
+}
+@media all and (max-width: 375px) {
+  .main-visual-bg .swiper-container {
+    top: 45%;
+  }
+}
+
+.main-visual .img-bx {
+  overflow: hidden;
+  height: 19.375rem;
+}
+.main-visual .txt-bx {
+  position: static !important;
+  transform: none !important;
+  margin-top: 1.75rem;
+  display: flex;
+}
+.main-visual .txt-bx p {
+  font-family: "S-CoreDream-3Light";
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff8a00;
+  text-align: left;
+}
+.main-visual .txt-bx span {
+  text-align: left !important;
+  color: #fbfbfb;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 0.3125rem;
+}
+.main-visual .txt-bx span em {
+  font-style: normal;
+  font-weight: 500;
+  text-align: left;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  margin-bottom: 44px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-visual .swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-slide {
+  max-width: 100% !important;
+  padding: 10px;
+}
+
+.section-2 {
+  background: url("../images/main/03-main-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  height: 58.75rem;
+}
+.section-2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section-2 .container .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+}
+.section-2 .container .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 700;
+  padding-bottom: 3.625rem;
+}
+.section-2 .container .con-sec {
+  position: relative;
+}
+.section-2 .container .con-sec .con-img {
+  max-width: 56.4375rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-img {
+    max-width: 48.75rem;
+    margin-top: 7.5rem;
+  }
+}
+@media all and (max-width: 1400px) {
+  .section-2 .container .con-sec .con-img {
+    margin-top: 6.25rem;
+    width: 100%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .section-2 .container .con-sec .con-img {
+    max-width: 43.75rem;
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  .section-2 .container .con-sec .con-img {
+    max-width: 36.875rem;
+    width: 100%;
+  }
+}
+.section-2 .container .con-sec .con-txt {
+  max-width: 87.5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.section-2 .container .con-sec .con-txt .cont-sub-txt {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  position: absolute;
+  font-size: 2rem;
+  text-align: left;
+  line-height: 1.1;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .cont-sub-txt {
+    font-size: 1.875rem;
+  }
+}
+.section-2 .container .con-sec .con-txt .cont-sub-txt span {
+  font-size: 1.5rem;
+}
+.section-2 .container .con-sec .con-txt .cont-sub-txt p {
+  font-weight: 700;
+}
+.section-2 .container .con-sec .con-txt .con-txt-1 {
+  left: -20%;
+  top: -3%;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-1 {
+    left: -5%;
+    top: 0%;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-1::after {
+  content: "";
+  max-width: 20.25rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: url("../../assets/images/main/03-con-line-1.png") no-repeat;
+  background-position: center;
+  position: absolute;
+  background-size: contain;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-1::after {
+    background: url("../../assets/images/main/03-con-line-1-1.png") no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    left: 50%;
+    margin-top: 0.625rem;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-2 {
+  top: 193px;
+  right: -286px;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-2 {
+    right: 8px;
+    top: 38px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .section-2 .container .con-sec .con-txt .con-txt-2 {
+    top: 24px;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-2::after {
+  content: "";
+  max-width: 28.125rem;
+  width: 120%;
+  height: 100%;
+  display: flex;
+  background: url("../../assets/images/main/03-con-line-2.png") no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 30px;
+  left: -61px;
+  background-size: contain;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-2::after {
+    background: url("../../assets/images/main/03-con-line-2-2.png") no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    left: 50%;
+    margin-top: 0.625rem;
+    top: 100%;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-3 {
+  top: 53%;
+  left: -250px;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-3 {
+    left: 95px;
+    top: 100%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .section-2 .container .con-sec .con-txt .con-txt-3 {
+    left: 57px;
+    top: 102%;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-3::after {
+  content: "";
+  max-width: 25rem;
+  width: 120%;
+  height: 100%;
+  display: flex;
+  background: url("../../assets/images/main/03-con-line-3.png") no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 30px;
+  left: -23px;
+  background-size: contain;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-3::after {
+    background: url("../../assets/images/main/03-con-line-3-2.png") no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    left: 50%;
+    margin-top: 0.625rem;
+    top: -122%;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-4 {
+  top: 78%;
+  right: -274px;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-4 {
+    right: -28px;
+    top: 102%;
+  }
+}
+.section-2 .container .con-sec .con-txt .con-txt-4::after {
+  content: "";
+  width: 30.625rem;
+  max-width: 30.625rem;
+  width: 120%;
+  height: 100%;
+  display: flex;
+  background: url("../../assets/images/main/03-con-line-4.png") no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 36px;
+  left: -101px;
+  background-size: contain;
+}
+@media all and (max-width: 1600px) {
+  .section-2 .container .con-sec .con-txt .con-txt-4::after {
+    background: url("../../assets/images/main/03-con-line-4-2.png") no-repeat;
+    background-size: contain;
+    max-height: 100%;
+    left: 50%;
+    margin-top: 0.625rem;
+    top: -108px;
+  }
+}
+
+.section-3 {
+  background: url("../images/main/section3-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  max-height: 117.5rem;
+  height: 100%;
+  width: 100%;
+}
+.section-3 .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.section-3 .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+.section-3 .main-txt p span {
+  color: #ff8a00;
+}
+.section-3 .percentage-con {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5.3125rem;
+  color: white;
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4.0625rem;
+  }
+}
+.section-3 .percentage-con .percentage-txt {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 2.75rem;
+}
+.section-3 .percentage-con .graph-standard {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .barnd-indi {
+    width: 100%;
+    margin-top: 10rem;
+  }
+}
+.section-3 .percentage-con .brand-indi-con {
+  position: relative;
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .brand-indi-con > img {
+    display: none;
+  }
+}
+.section-3 .percentage-con .brand-indi-con .txt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 1.875rem;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .brand-indi-con .txt {
+    position: static;
+    display: flex;
+  }
+}
+.section-3 .percentage-con .brand-indi-con .txt .txt-box {
+  display: flex;
+  flex: 2;
+}
+.section-3 .percentage-con .brand-indi-con .txt .txt-box .text-con {
+  position: relative;
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .brand-indi-con .txt .txt-box .text-con::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: white;
+  }
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .brand-indi-con .txt .txt-box {
+    display: inline-flex;
+  }
+}
+.section-3 .percentage-con .brand-indi-con .txt .txt-box > div {
+  flex: 1;
+  line-height: 1.2;
+  align-items: center;
+}
+.section-3 .percentage-con .brand-indi-con .txt p {
+  text-align: center;
+  font-size: 1.9375rem;
+}
+.section-3 .percentage-con .brand-indi-con .txt p span {
+  font-size: 1.3125rem;
+  line-height: 1;
+}
+.section-3 .percentage-con .brand-indi-con .txt em {
+  font-size: 3.6875rem;
+  font-style: normal;
+  text-align: center;
+  padding-top: 0.625rem;
+  display: inline-block;
+  width: 100%;
+  font-weight: 700;
+  color: #ff8a00;
+}
+.section-3 .percentage-con .brand-indi-con .txt .txt-3 {
+  margin-top: 5rem;
+  flex: 1;
+  display: block;
+  line-height: 1.2;
+}
+@media all and (max-width: 1200px) {
+  .section-3 .percentage-con .brand-indi-con .txt .txt-3 {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 0rem;
+  }
+}
+
+.section-4 {
+  background: url("../images/main/section4-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  max-height: 86.25rem;
+  height: 100%;
+  width: 100%;
+}
+.section-4 .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section-4 .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+.section-4 .main-txt p span {
+  color: #ff8a00;
+}
+.section-4 .main-txt .coment {
+  width: 100%;
+}
+.section-4 .main-txt .coment p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2.1875rem;
+  line-height: 1.3;
+  text-align: center;
+  color: #e6d7c5;
+}
+.section-4 .main-txt .coment p:last-child {
+  left: 100%;
+  transform: translateX(-100%);
+  width: 240px;
+}
+.section-4 .standard-come {
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300;
+  text-align: right;
+  margin-top: 1.875rem;
+}
+
+.section-5 {
+  background: url("../images/main/section5-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  max-height: 58.75rem !important;
+  height: 100%;
+  width: 100%;
+}
+.section-5 .container {
+  height: 100%;
+}
+.section-5 .container .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #272424;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section-5 .container .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+.section-5 .container .main-txt p span {
+  color: #ff8a00;
+}
+.section-5 .container .resSwipter {
+  overflow: hidden;
+}
+.section-5 .container .standard-come {
+  font-size: 1.5rem;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.section-6 .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #272424;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section-6 .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+.section-6 .main-txt p span {
+  color: #ff8a00;
+}
+.section-6 .goal-txt {
+  display: flex;
+  width: 100%;
+  font-size: 3.125rem;
+  font-family: "S-CoreDream-3Light";
+  color: #272424;
+  font-weight: 800;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-6 .goal-txt span {
+  color: #ff7e00;
+}
+.section-6 .goal-txt .triangle {
+  line-height: 1;
+  vertical-align: middle;
+}
+.section-6 .goal-txt .left-triangle em:nth-child(5) {
+  opacity: 0.9;
+}
+.section-6 .goal-txt .left-triangle em:nth-child(4) {
+  opacity: 0.8;
+}
+.section-6 .goal-txt .left-triangle em:nth-child(3) {
+  opacity: 0.7;
+}
+.section-6 .goal-txt .left-triangle em:nth-child(2) {
+  opacity: 0.6;
+}
+.section-6 .goal-txt .left-triangle em:nth-child(1) {
+  opacity: 0.5;
+}
+.section-6 .goal-txt .left-triangle em img {
+  vertical-align: middle;
+}
+.section-6 .goal-txt .right-triangle em:nth-child(2) {
+  opacity: 0.9;
+}
+.section-6 .goal-txt .right-triangle em:nth-child(3) {
+  opacity: 0.8;
+}
+.section-6 .goal-txt .right-triangle em:nth-child(4) {
+  opacity: 0.7;
+}
+.section-6 .goal-txt .right-triangle em:nth-child(5) {
+  opacity: 0.6;
+}
+.section-6 .goal-txt .right-triangle em:nth-child(6) {
+  opacity: 0.5;
+}
+.section-6 .goal-txt .right-triangle img {
+  transform: rotate(180deg);
+}
+.section-6 .standard-come {
+  font-size: 1.5rem;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #272424;
+  font-weight: 300;
+}
+
+.section-6 {
+  background-color: #ff8a00;
+  height: 58.75rem;
+}
+.section-6 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.section-6 .container .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #272424;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section-6 .container .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+
+.section-7 {
+  background: url("../images/main/section7-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  min-height: 58.75rem;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.section-7 .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section-7 .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+}
+.section-7 .main-txt p span {
+  color: #ff8a00;
+}
+.section-7 #tabs > div {
+  padding: 3.125rem;
+}
+.section-7 #tabs > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.section-7 #tabs > ul .ui-tabs-active {
+  color: #ff8a00;
+  font-weight: 700;
+}
+.section-7 #tabs > ul li {
+  font-size: 1.75rem;
+  text-align: center;
+  width: 100%;
+  padding: 1.25rem 0;
+  position: relative;
+  left: 0;
+}
+.section-7 #tabs > ul li:first-child {
+  margin-left: 0;
+}
+.section-7 #tabs > ul li:last-child {
+  margin-right: 0;
+}
+.section-7 #tabs > ul li::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+.section-7 #tabs > ul li:hover::after, .section-7 #tabs > ul li.active::after {
+  visibility: visible;
+  opacity: 1;
+}
+.section-7 #tabs #tabs-1,
+.section-7 #tabs #tabs-2,
+.section-7 #tabs #tabs-3 {
+  display: flex;
+}
+.section-7 #tabs #tabs-1 > div,
+.section-7 #tabs #tabs-2 > div,
+.section-7 #tabs #tabs-3 > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-7 #tabs #tabs-1 .tab-img,
+.section-7 #tabs #tabs-2 .tab-img,
+.section-7 #tabs #tabs-3 .tab-img {
+  max-width: 40rem;
+  width: 100%;
+  max-height: 23.4375rem;
+  width: 100%;
+  overflow: hidden;
+  background-position: center;
+}
+.section-7 #tabs .tab-txt {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  position: relative;
+  line-height: 1.3;
+  margin-bottom: 2.625rem;
+}
+.section-7 #tabs .tab-txt span {
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+}
+.section-7 #tabs .tab-txt span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.25rem;
+  background: #5f2200;
+  z-index: -1;
+}
+.section-7 #tabs .sub-txt ul li {
+  margin-bottom: 1.25rem;
+}
+.section-7 #tabs .sub-txt ul li p {
+  font-size: 1.5rem;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.section-7 #tabs .sub-txt ul li p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-46%);
+  left: 0;
+  width: 0.4375rem;
+  height: 90%;
+  background-color: #ff8a00;
+}
+.section-7 #tabs .sub-txt ul li span {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.section-7 #tabs .sub-txt ul li .round-con {
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: normal;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  display: flex;
+  justify-content: space-between;
+}
+.section-7 #tabs .sub-txt ul li .round-con em {
+  font-style: normal;
+  width: 6.0625rem;
+  height: 6.0625rem;
+  background-color: #ff8a00;
+  border-radius: 50%;
+  color: #1d1300;
+  display: inline-flex;
+  line-height: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0.875rem 0;
+}
+.section-7 #tabs .sub-txt ul li .round-con em::after {
+  content: "";
+  background: url("../../assets/images/main/arrow-right.png") no-repeat;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  right: -1.75rem;
+  top: 0;
+  width: 0.8125rem;
+  height: 100%;
+}
+.section-7 #tabs .sub-txt ul li .round-con em:last-child::after {
+  display: none;
+}
+.section-7 .marketing {
+  flex-direction: column;
+}
+.section-7 .marketing .marketing-img.tab-img {
+  max-width: unset;
+}
+.section-7 .recruit-come {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.section-7 .recruit-come .submit {
+  font-weight: 800;
+  background-color: #ff8a00;
+  font-size: 1.75rem;
+  width: 14.0625rem;
+  height: 2.6875rem;
+  border-radius: 1.5625rem;
+  color: #fff;
+  margin: 0 1.25rem;
+}
+
+.section-8 {
+  background: url("../images/main/section8-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem 0;
+  min-height: 58.75rem;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.section-8 .main-txt {
+  font-size: 3.125rem;
+  line-height: 1;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+@media all and (max-width: 1024px) {
+  .section-8 .main-txt {
+    font-size: 4.1666666667vw;
+  }
+}
+.section-8 .main-txt p {
+  padding-top: 0.9375rem;
+  font-weight: 800;
+  padding-bottom: 3.625rem;
+  line-height: 1.4;
+}
+.section-8 .main-txt p span {
+  color: #ff8a00;
+}
+.section-8 .main-txt p em {
+  font-style: normal;
+}
+.section-8 .sub-tit {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.section-8 ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 3.000003;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+@media all and (max-width: 1024px) {
+  .section-8 ul {
+    justify-content: center;
+  }
+}
+.section-8 ul li {
+  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.875rem;
+  font-weight: 700;
+  max-width: 27.5rem;
+  width: 100%;
+  padding: 1.25rem;
+  margin: 0.625rem 0.625rem;
+  position: relative;
+}
+@media all and (max-width: 1024px) {
+  .section-8 ul li {
+    max-width: 18.75rem;
+    padding-bottom: 6.25rem;
+  }
+}
+.section-8 ul li:last-child {
+  background: #ff8a00;
+}
+.section-8 ul li:last-child p {
+  color: white;
+}
+.section-8 ul li p {
+  color: #ff8a00;
+}
+.section-8 ul li span {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.section-8 ul li em {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
+.section-8-2 {
+  background: url("../images/main/section-8-2-bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 6.25rem;
+  min-height: 52.5rem;
+  height: 100%;
+  width: 100%;
+  color: #231a13;
+  text-align: center;
+}
+@media all and (max-width: 576px) {
+  .section-8-2 {
+    padding: 0 0.125rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .section-8-2 .section-graph-pc {
+    display: none;
+  }
+}
+.section-8-2 .section-graph-mo {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .section-8-2 .section-graph-mo {
+    display: block;
+    background-size: contain;
+    max-width: 43.75rem;
+    margin-top: 1.25rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .section-8-2 .section-graph-mo {
+    max-width: 37.5rem;
+  }
+}
+@media all and (max-width: 576px) {
+  .section-8-2 .section-graph-mo {
+    max-width: 25rem;
+    width: 100%;
+    margin: 0, 1.25rem;
+  }
+}
+@media all and (max-width: 320px) {
+  .section-8-2 .section-graph-mo {
+    max-width: 20rem;
+    width: 100%;
+  }
+}
+.section-8-2 p {
+  font-size: 2rem;
+  color: #231a13;
+  text-align: center;
+  font-weight: 500;
+}
+.section-8-2 img {
+  padding: 1.25rem 0;
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+}
+.section-8-2 span {
+  text-align: left;
+  display: inline-block;
+  font-size: 0.875rem;
+}
+@media all and (max-width: 1024px) {
+  .section-8-2 span {
+    max-width: 48.75rem;
+    margin: 0 1.25rem;
+  }
+}
+
+.footer {
+  background: #231a13;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media all and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+.footer p {
+  font-size: 1.625rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+@media all and (max-width: 576px) {
+  .footer p {
+    margin-bottom: 0.625rem;
+  }
+}
+.footer button {
+  font-size: 1.875rem;
+  font-weight: 800;
+  background-color: #ff8a00;
+  color: #fff;
+  width: 15.3125rem;
+  height: 4rem;
+  border-radius: 6.25rem;
+}
+/*# sourceMappingURL=main.css.map */

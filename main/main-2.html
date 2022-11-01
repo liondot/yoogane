@@ -1,0 +1,606 @@
+	<? include "../include/head.html" ?>
+	<!DOCTYPE html>
+	<html lang="<?=$P_lang?>">
+
+	<head>
+		<?
+			$P_dp0 = 'main';
+			include "../include/meta.html" 
+			?>
+		<link rel="stylesheet" href="../assets/css/main.min.css" />
+	</head>
+
+	<body class="main-body">
+		<? include "../include/header.html" ?>
+
+		<main class="main" id="contents">
+			<!-- S : main-visual -->
+			<section class="main-visual main-visual-bg">
+				<h1 class="sr-only">메인비주얼 영역</h1>
+				<div class="main-txt">
+					<div class="main-con-logo">
+						<img src="../assets/images/main/con-logo.png" alt="">
+					</div>
+					<div class="main-con-txt">
+						<p>시간이 흘러도 변함없는 <br>
+							<span><em>명불허전 1등 닭갈</em>비 브랜드는 다릅니다!</span></p>
+					</div>
+				</div>
+				<div class="swiper-container mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide item">
+							<div class="img-bx">
+								<img src="../assets/images/main/main-con-1.png" alt="">
+							</div>
+							<div class="txt-bx">
+								<p>하나,</p>
+								<span>고추장 양념이 아닌 전용 <em> 고춧가루
+										특제 양념</em>으로 숙성시켜 맛을 낸
+							</div>
+						</div>
+						<div class="swiper-slide item">
+							<div class="img-bx">
+								<img src="../assets/images/main/main-con-2.png" alt="">
+							</div>
+							<div class="txt-bx">
+								<p>하나,</p>
+								<span>고추장 양념이 아닌 전용 <em> 고춧가루
+										특제 양념</em>으로 숙성시켜 맛을 낸
+							</div>
+						</div>
+						<div class="swiper-slide item">
+							<div class="img-bx">
+								<img src="../assets/images/main/main-con-3.png" alt="">
+							</div>
+							<div class="txt-bx">
+								<p>하나,</p>
+								<span>고추장 양념이 아닌 전용 <em> 고춧가루
+										특제 양념</em>으로 숙성시켜 맛을 낸
+							</div>
+						</div>
+					</div>
+
+					<!--
+							TODO: 퍼블 작업 시 가이드
+							TODO: .swiper-control 엘리먼트에 각각 추가 클래스 부여하여 스타일 변경.
+							TODO: .swiper-control 만 선언 시 기본 형태 유지
+							TODO: .swiper-control--progress = 기본 프로그레스 바 형태 ( * scss만 변경 )
+							TODO: .swiper-control--progress-no = 숫자 포함 프로그레스 바 ( * script 커스텀 필요 )
+						-->
+					<div class="swiper-control">
+						<div class="container">
+							<!-- S : Swiper Pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- E : Swiper Pagination -->
+
+							<!--
+								TODO: 재생버튼 필요 시에만 주석 해제
+								<div class="swiper-play on">
+									<i class="xi-play"></i>
+									<i class="xi-pause"></i>
+								</div>
+								-->
+
+							<!--
+									S : Swiper Navigation
+									TODO: 기본 형태 외 다른 형태 사용 시 .swiper-control에 absolute가 적용되기 때문에 위치 커스텀 필요.
+								-->
+							<button type="button" class="swiper-button swiper-button--prev">
+								<i class="xi-angle-left"></i>
+							</button>
+							<button type="button" class="swiper-button swiper-button--next">
+								<i class="xi-angle-right"></i>
+							</button>
+							<!-- E : Swiper Navigation -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : main-visual -->
+			<!-- S : section2 대한민국 1등 닭갈비 -->
+			<section class="section-2">
+				<h1 class="sr-only">대한민국 1등 닭갈비</h1>
+				<div class="container">
+					<div class="main-txt">
+						#대한민국 1등 닭갈비
+						<p>명품 브랜드 #유가네닭갈비</p>
+					</div>
+					<div class="con-sec">
+						<div class="con-img"><img src="../assets/images/main/03-con.png" alt="유가네닭갈비">
+						</div>
+						<div class="con-txt">
+							<div class="cont-sub-txt con-txt-1">
+								춘천닭갈비를 뛰어넘는
+								<p>유가네닭갈비 인지도</p>
+								<span>(네이버 Datalab 기준)</span>
+							</div>
+							<div class="cont-sub-txt con-txt-2">
+								전국 220여개 가맹점,
+								<p>국내 닭갈비 최다 가맹점</p>
+								<div class="con-line line-1"></div>
+							</div>
+							<div class="cont-sub-txt con-txt-3">
+								5초에 하나씩 팔리는
+								<p>‘철판 볶음밥’</p>
+								<div class="con-line line-1"></div>
+							</div>
+							<div class="cont-sub-txt con-txt-4">
+								비슷해 보여도 흉내 낼 수 없는
+								<p>맛의 깊이가 다른 유가네</p>
+								<span>(반반닭갈비, 콘치즈닭갈비, 치즈퐁닭)</span>
+								<div class="con-line line-1"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : section2 대한민국 1등 닭갈비 -->
+			<!-- S : section3 닭갈비 업계1위 -->
+			<section class="section-3">
+				<h1 class="sr-only">닭갈비 업계1위</h1>
+				<div class="container">
+					<div class="main-txt">
+						객관적인 수치가 증명하는
+						<p><span>닭갈비 업계 1위</span> 유가네</p>
+					</div>
+					<div class="percentage-con">
+						<div class="graph">
+							<div class="percentage-txt graph-txt">
+								면적(3.3㎡당) 평균 매출
+							</div>
+							<img src="../assets/images/main/section-graph.png" alt="">
+							<div class="graph-standard">
+								※ 공정거래위원회 정보공개서 2020년 기준
+							</div>
+						</div>
+						<div class="barnd-indi">
+							<div class="percentage-txt brand-txt">
+								안정적인 브랜드 지표
+							</div>
+							<div class="brand-indi-con">
+								<img src="../assets/images/main/section3-3line.png" alt="">
+								<div class="txt">
+									<div class="txt-box">
+										<div class="text-con txt-1">
+											<p>평균 운영년수 <br>
+												<span>(만 3년 미만 제외)</span> <br>
+											</p>
+											<em>8년</em>
+
+										</div>
+										<div class="text-con txt-2">
+											<p>10년 이상<br>
+												운영 매장<br>
+											</p>
+											<em>24개</em>
+
+										</div>
+									</div>
+									<div class="text-con txt-3">
+										<p>다점포 매장 <br>
+											<span>(동일 점주 2개 이상)</span>
+
+										</p>
+										<em>64개</em>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- E : section3 닭갈비 업계1위 -->
+			<!-- S : section4 매출 초대박 -->
+			<section class="section-4">
+				<h1 class="sr-only">닭갈비 업계1위</h1>
+				<div class="container">
+					<div class="main-txt">
+						객관적인 수치가 증명하는
+						<p><span>닭갈비 업계 1위</span> 유가네</p>
+						<div class="coment">
+							<p>&#34; 점심, 저녁 <br>
+								모두 OK! &#34;</p>
+							<p>&#34; 독보적 볶음밥<br>
+								명품 닭갈비 &#34;</p>
+						</div>
+					</div>
+					<div class="section-4-img">
+						<img src="../assets/images/main/section4-con.png" alt="">
+					</div>
+					<div class="standard-come">
+						※당사 POS매출 2021년 매장별 월 최고 매출 데이터 기준
+					</div>
+				</div>
+			</section>
+			<!-- E : section4 매출 초대박 -->
+			<!-- S : section5 다점포율 비결 -->
+			<section class="section-5">
+				<h1 class="sr-only">다점포율 비결</h1>
+				<div class="container">
+					<div class="main-txt">
+						직접 해 보니 진짜 잘 되더라!
+						<p><span>다점포율 30%</span>의 비결</p>
+					</div>
+					 <!-- Swiper -->
+					 <div class="swiper resSwipter">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="../assets/images/main/section5-swiper-1.png" alt=""></div>
+							<div class="swiper-slide"><img src="../assets/images/main/section5-swiper-2.png" alt=""></div>
+							<div class="swiper-slide"><img src="../assets/images/main/section5-swiper-3.png" alt=""></div>
+							<div class="swiper-slide"><img src="../assets/images/main/section5-swiper-4.png" alt=""></div>
+						</div>
+						<div class="resbutton swiper-button-next"></div>
+						<div class="resbutton swiper-button-prev"></div>
+					</div>
+					<div class="standard-come">
+						※당사 POS매출 1021년 평균 매출 기준
+					</div>
+				</div>
+			</section>
+			<!-- E : section5 다점포율 비결 -->
+			<!-- S : section6 유가네닭갈비 영상-->
+			<section class="section-6">
+				<h1 class="sr-only">유가네닭갈비 동영상</h1>
+				<div class="container">
+					<div class="main-txt">
+						직접 해 보니 진짜 잘 되더라!
+						<p><span>다점포율 30%</span>의 비결</p>
+					</div>
+					
+
+				</div>
+			</section>
+			<!-- E : section6 유가네닭갈비 영상 -->
+			<!-- S : section7 유가네 창업-->
+			<section class="section-7">
+				<h1 class="sr-only">유가네닭갈비 창업</h1>
+				<div class="container">
+					<div class="main-txt">
+						장사’꾼’을 만들어주는
+						<p>유가네만의 <span>A to Z 지원 시스템</span></p>
+					</div>
+					<div id="tabs">
+						<ul>
+							<li class="active"><a href="#tabs-1">교육 및 가맹관리</a></li>
+							<li><a href="#tabs-2">물류 / R&D</a></li>
+							<li><a href="#tabs-3">홍보 / 마케팅</a></li>
+						</ul>
+						<div id="tabs-1">
+							<div class="management">
+								<div class="manage-txt">
+									<div class="tab-txt">
+										외식업 초보도 전문가로 만드는 <br>
+										<span>유가네만의 체계적인 교육 시스템</span>
+									</div>
+									<div class="manage-sub-txt sub-txt">
+										<ul>
+											<li>
+												<p>실전 맞춤형 매장 운영 교육</p>
+												<span>- 노무, 메뉴, 프랜차이즈 시스템 등 전반적인 운영 노하우 교육 진행</span>
+												<div class="round-con">
+													<em>본사 교육 <br>
+														5일</em>
+													<em>현장 실습 <br>
+														교육 4일</em>
+													<em>오픈 후 <br>
+														현장 교육 <br>
+														7일</em>
+													<em>4주간 <br>
+														집중 운영 <br>
+														관리</em>
+												</div>
+											</li>
+											<li>
+												<p>담당SV 밀착 관리를 통한 매장 관리</p>
+												<span>- 정기적인 매장 진단으로 가맹점 컨설팅 및 가맹점 퀄리티 관리 </span> <br>
+												<span>- 매출 향상을 위한 지역 기반(LSM) 마케팅 지원</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="manage-img tab-img">
+									<img src="../assets/images/main/startup-img1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div id="tabs-2">
+							<div class="rnd">
+								<div class="rnd-txt">
+									<div class="tab-txt">
+										HACCP 인증 CK 공장 보유 <br>
+										전국 물류망 시스템 구축을 통한 <br>
+										<span>안정적인 배송 시스템</span>
+									</div>
+									<div class="rnd-sub-txt sub-txt">
+										<ul>
+											<li>
+												<p>안정적인 물류시스템 구축</p>
+												<span>- 주 6일 배송을 통한 신선한 식재료 공급 및 재고 부담을 최소화</span> <br>
+												<span>- 양산 500평 규모의 HACCP 인증 CK공장에서 위생적인 닭갈비 생산</span>
+											</li>
+											<li>
+												<p>업계 최저 식자재 비율</p>
+												<span>- 27~33% 낮은 식자재로 비율로 가맹점 수익 극대화 </span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="rnd-img tab-img">
+									<img src="../assets/images/main/rnd-img1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div id="tabs-3">
+							<div class="marketing">
+								<div class="marketing-txt">
+									<div class="tab-txt">
+										점주님은 운영에만 집중하세요! <span>매출향상을 위한 본사 마케팅 지원</span>
+									</div>
+								</div>
+								<div class="marketing-img tab-img">
+									<div class="marketing-con">
+										<img src="../assets/images/main/market-img1.png" alt=""></div>
+									<p>예능 및 드라마 PPL</p>
+									<div class="marketing-con">
+										<img src="../assets/images/main/market-img2.png" alt=""></div>
+									<p>온, 오프라인 프로모션</p>
+									<div class="marketing-con">
+										<img src="../assets/images/main/market-img3.png" alt=""></div>
+									<p>스마트플레이스 리뷰 노출, SNS 광고 지원</p>
+								</div>
+							</div>
+			</section>
+			<!-- E : section7 유가네 창업-->
+			<!-- S : section8 체계적인 시스템관리-->
+			<section class="section-8">
+				<h1 class="sr-only">체계적인 시스템관리</h1>
+				<div class="container">
+					<div class="main-txt">
+						<p>상담부터 오픈까지 <span>체계적인 시스템</span>과 관리 <br>
+							업계<em>최저 수준의 인테리어 평단가</em>시공</p>
+					</div>
+					<p class="sub-tit">가맹점 개설 절차 </p>
+					<ul>
+						<li>
+							<p>01.개설상담</p>
+							<span>
+								&#183; 전화 및 홈페이지를 통한 비대면 상담 <br>
+								&#183; 내방 및 출장 상담<br>
+								&#183; 가맹점 견학 상담<br>
+							</span>
+							<em><img src="../assets/images/main/icon-2.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>02.1차 미팅</p>
+							<span>
+								&#183; 브랜드 소개 및 입점예정지 <br>
+								입점 가능여부 판단
+							</span>
+							<em><img src="../assets/images/main/icon-2.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>03.점포개발 및 상권조사</p>
+							<span>
+								&#183; 입점예정지 상권분석 및 타당성 검토
+							</span>
+							<em><img src="../assets/images/main/icon-3.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>04.2차 미팅(인허가 관련 상담)</p>
+							<span>
+								&#183; 가맹계약 전 영업관련 인허가 사항 체크 <br>
+								&#183; 가맹계약서 및 정보공개서 제공 <br>
+								&#183; 인테리어 실측 <br>
+							</span>
+							<em><img src="../assets/images/main/icon-4.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>05.기타 계약체결</p>
+							<span>
+								&#183; 인테리어 업체 계약 <br>
+								&#183; 도면설계 확인 및 공사견적산출 <br>
+								&#183; 시공일 협의 <br>
+								&#183; 간판견적 산출 및 계약 미팅 <br>
+								&#183; 주방집기 견적산출 및 계약 <br>
+							</span>
+							<em><img src="../assets/images/main/icon-5.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>06.3차 미팅(가맹계약 체결)</p>
+							<span>
+								&#183; 가맹비,교육비,물품보증비 등 <br>
+								해당기관에 예치
+							</span>
+							<em><img src="../assets/images/main/icon-6.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>07.창업자 교육</p>
+							<span>
+								&#183; 경영이론교육 <br>
+								&#183; 현장실습 및 위생교육<br>
+								&#183; CS교육<br>
+								&#183; 사업자등록증, 영업신고증 발급<br>
+							</span>
+							<em><img src="../assets/images/main/icon-7.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>08.시공완료</p>
+							<span>
+								&#183; 시공 최종 점검<br>
+								&#183; 주방집기 및 기계 세팅<br>
+								&#183; 창업자 검수<br>
+							</span>
+							<em><img src="../assets/images/main/icon-8.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>09.최종점검</p>
+							<span>
+								&#183; 인테리어 시설<br>
+								&#183; 각종집기<br>
+								&#183; 초도물품 확인<br>
+							</span>
+							<em><img src="../assets/images/main/icon-9.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>10.오픈준비</p>
+							<span>
+								&#183; 최종기기 점검 시험가동<br>
+								&#183; 가 오픈 실시<br>
+								&#183; 홍보물 제공<br>
+							</span>
+							<em><img src="../assets/images/main/icon-10.png" alt="아이콘"></em>
+						</li>
+						<li>
+							<p>11.그랜드 오프닝</p>
+							<span>
+								&#183; 본사 슈퍼바이저 현장지원<br>
+								&#183; 사후관리
+							</span>
+							<em><img src="../assets/images/main/icon-11.png" alt="아이콘"></em>
+						</li>
+					</ul>
+			</section>
+			<!-- S : section8-2 창업비용-->
+			<section class="section-8-2">
+				<p>창업비용</p>
+				<img class="section-graph-pc" src="../assets/images/main/section-8-2-graph.png" alt="">
+				<img class="section-graph-mo" src="../assets/images/main/section-8-2-graph-mo.png" alt="">
+				<span>
+					※ 별도공사 : 익스테리어, 냉·난방기, TV, 전기증설, 가스시공, 분전함, 삿시, 화장실, 덕트, 어닝, 폴딩도어, 철거공사, 소방시설, 공사보험, CCTV, 인허가, POS 등 <br>
+					※ 인테리어 평단가 : 시장상황에 따라 변동가능 (EX. 인건비, 자재비 등 금액 인상) <br>
+					※ 이행보증금 : 300만원 (서울보증보험 증권으로 대체)
+				</span>
+			</section>
+
+			<!-- E : section8-2 창업비용-->
+			<footer>
+				<div class="footer">
+					<p>유가네와 함께 성공하실 점주님을 모집합니다</p>
+					<button class="submit">창업문의하기</button>
+				</div>
+			</footer>
+
+
+		</main>
+
+		<? include "../pop/modal-pop.html" ?>
+		<!-- <? include "../include/footer.html" ?> -->
+		<? include "../include/js.html" ?>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				slidesPerView: 3,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation : false,
+				breakpoints: {
+					100: {
+						slidesPerView: 1,
+					},
+					640: {
+						slidesPerView: 1,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 50,
+					},
+					900: {
+						slidesPerView: 2,
+						spaceBetween: 30,
+						pagination: {
+							el: ".swiper-pagination",
+							clickable: true,
+						},
+					},
+					1024: {
+						slidesPerView: 3,
+						pagination: {
+							el: ".swiper-pagination",
+							clickable: true,
+						},
+					},
+				},
+			});
+
+			var swiper = new Swiper(".fiveSwiper", {
+				slidesPerView: 3,
+				spaceBetween: 30,
+				slidesPerGroup: 3,
+				loop: true,
+				loopFillGroupWithBlank: true,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+
+
+			/*
+				TODO: 재생버튼 필요 시에만 주석 해제
+				$('.main-visual .swiper-play').on('click', function () {
+					if ($(this).hasClass('on')) {
+						$(this).removeClass('on');
+						mvSwiper.autoplay.stop();
+					} else {
+						$(this).addClass('on');
+						mvSwiper.autoplay.start();
+					}
+				});
+				*/
+
+			// 모달팝업 스와이퍼
+			var bullet = ['팝업명1', '팝업명2', '팝업명3', '팝업명4', '팝업명5'];
+			var popSwiper = new Swiper('.modal-swiper .swiper-container', {
+				loop: true,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true,
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.modal-header .swiper-pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
+					}
+				},
+				autoHeight: true,
+				navigation: {
+					nextEl: '.modal-swiper .swiper-button--next',
+					prevEl: '.modal-swiper .swiper-button--prev',
+				},
+			});
+
+
+			// 유가네 창업지원 시스템 텝 
+
+			$("#tabs").tabs();
+
+			// section-5 다점포율 비결 
+			var swiper = new Swiper(".resSwipter", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+			// 유가네닭갈비 영상 재생 
+		</script>
+	</body>
+
+	</html>
